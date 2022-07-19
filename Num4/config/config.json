@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "EKUID_TEST_DB",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

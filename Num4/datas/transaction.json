@@ -1,0 +1,14 @@
+[
+  {
+    "id_book": "1",
+    "id_user": "1",
+    "status": "available",
+    "date": "22/12/2023"
+  },
+  {
+    "id_book": "1",
+    "id_user": "1",
+    "status": "unavailable",
+    "date": "22/12/2023"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "email": "lkangga070@gmail.com",
+    "password": "aaa132",
+    "user_name": "angga",
+    "user_address": "jalan sudirman"
+  },
+  {
+    "id": 2,
+    "email": "lkangga010@gmail.com",
+    "password": "123aaa",
+    "user_name": "anggi",
+    "user_address": "jalan salemba"
+  }
+]
