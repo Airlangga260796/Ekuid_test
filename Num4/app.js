@@ -88,6 +88,7 @@ app.patch("/transaction/:id", async (req, res, next) => {
   try {
     const id = req.params.id;
     const { status } = req.body;
+    const date = new Date();
 
     if (!status) {
       throw new Error(`bad_request`);
@@ -100,16 +101,17 @@ app.patch("/transaction/:id", async (req, res, next) => {
     });
 
     const statusUpdate = await Transaction.update(
-      { status: status },
+      { status: status, date: date },
       { where: { id: id } }
     );
-
+    // const date = new Date()
     const data = {
       book_name: statusRes.Book.book_name,
       author: statusRes.Book.author,
       photo: statusRes.Book.photo,
       status_before: statusRes.status,
       status_After: status,
+      date: new Date(),
     };
     res.status(200).json({
       statusCode: 200,

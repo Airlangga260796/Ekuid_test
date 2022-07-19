@@ -35,7 +35,7 @@ module.exports = (sequelize, DataTypes) => {
         },
       },
       status: DataTypes.STRING,
-      date: DataTypes.STRING,
+      date: DataTypes.DATE,
     },
     {
       sequelize,
